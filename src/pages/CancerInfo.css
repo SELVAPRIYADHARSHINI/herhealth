@@ -1,0 +1,106 @@
+/* General container for the whole page */
+.info-page {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center; /* Ensures all text is centered */
+  }
+  
+  h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 30px;
+    color: #007BFF;
+    margin-top: 40px;
+  }
+  
+  h3 {
+    font-size: 24px;
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  
+  /* Paragraph styling */
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for lists inside the content */
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555;
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+    padding-left: 10px;
+    position: relative;
+  }
+  
+  ul li::before {
+    content: "•";
+    color: #007BFF; /* Blue bullet point */
+    position: absolute;
+    left: 0;
+    font-size: 24px;
+    top: 3px;
+  }
+  
+  /* Image styling */
+  .cancer-img {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Section styling for each cancer type */
+  .cancer-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for smaller screens (mobile devices) */
+  @media (max-width: 768px) {
+    .info-page {
+      width: 90%;
+    }
+  
+    h1 {
+      font-size: 28px;
+    }
+  
+    h2 {
+      font-size: 24px;
+    }
+  
+    p, ul li {
+      font-size: 16px;
+    }
+  
+    .cancer-img {
+      width: 90%;
+    }
+  }
+  

@@ -1,0 +1,157 @@
+/* General Styles */
+.info-page {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    color: #1E2A56;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+/* Intro Section */
+.intro-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.intro-image {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 850px;
+    margin: 20px auto;
+    text-align: justify;
+    color: #555;
+}
+
+/* Section Styles */
+h2 {
+    font-size: 2rem;
+    color: #1E2A56;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 900px;
+    text-align: left;
+}
+
+ul li {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    color: #666;
+    position: relative;
+}
+
+ul li::before {
+    content: "\2022"; /* Bullet point symbol */
+    color: #4A90E2;
+    position: absolute;
+    left: -20px;
+    font-size: 1.5rem;
+    top: 0;
+}
+
+/* Section Images */
+.section-images {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.section-image {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 8px;
+    margin: 0 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Style */
+.cta-button {
+    background-color: #4A90E2;
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto;
+    text-align: center;
+    width: fit-content;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #3578e5;
+}
+
+/* Footer */
+.info-footer {
+    background-color: #1E2A56;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 8px;
+}
+
+.info-footer p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    .intro-image, .section-image {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .intro-text {
+        font-size: 1.1rem;
+    }
+
+    ul li {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        font-size: 1.1rem;
+        padding: 10px 20px;
+    }
+
+    .info-footer {
+        padding: 15px;
+    }
+}

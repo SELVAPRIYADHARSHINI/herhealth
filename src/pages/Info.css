@@ -1,0 +1,185 @@
+.info-page {
+  padding-top: 80px;
+  min-height: 100vh;
+  max-width: 1000px; /* Reduced maximum width */
+  margin: 0 auto;
+  padding: 80px 20px 20px;
+}
+
+.info-title {
+  text-align: center;
+  color: #1a73e8;
+  margin-bottom: 2rem;
+  font-size: 2rem; /* Reduced font size for better balance */
+}
+
+.disease-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Reduced minimum card size */
+  gap: 1.5rem; /* Reduced gap between cards */
+  padding: 1rem;
+}
+
+.disease-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.disease-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.disease-card img {
+  width: 100%;
+  height: 160px; /* Further reduced height for a smaller aspect ratio */
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.disease-card:hover img {
+  transform: scale(1.05); /* Subtle zoom-in effect */
+}
+
+.disease-card h2 {
+  padding: 1rem;
+  margin: 0;
+  color: #1a73e8;
+  font-size: 1.25rem; /* Reduced font size */
+}
+
+.disease-card p {
+  padding: 0 1rem;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: auto; /* Aligns the button at the bottom */
+}
+
+.disease-card button {
+  margin: 1rem;
+  padding: 0.4rem 1rem; /* Reduced padding for a smaller button */
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem; /* Smaller font size for compactness */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.disease-card button:hover {
+  background-color: #1557b0;
+  transform: scale(1.05);
+}
+
+.disease-detail {
+  padding: 1.5rem; /* Reduced padding */
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.disease-detail h1 {
+  color: #1a73e8;
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem; /* Reduced font size */
+}
+
+.disease-detail img {
+  width: 100%;
+  max-width: 500px; /* Reduced max width for smaller layouts */
+  height: auto;
+  border-radius: 10px;
+  margin: 1rem 0;
+}
+
+.disease-detail p {
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 0.95rem; /* Smaller text size */
+}
+
+.back-button {
+  padding: 0.4rem 1rem; /* Smaller button dimensions */
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #1557b0;
+}
+
+.section-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem; /* Reduced margin */
+  justify-content: center;
+}
+
+.section-buttons button {
+  padding: 0.4rem 1rem;
+  background-color: #e3f2fd;
+  color: #1a73e8;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  font-size: 0.9rem; /* Smaller font size */
+}
+
+.section-buttons button.active {
+  background-color: #1a73e8;
+  color: white;
+}
+
+.detail-section {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .disease-cards {
+    grid-template-columns: 1fr; /* Single column for smaller screens */
+  }
+
+  .info-title {
+    font-size: 1.5rem; /* Smaller title for smaller screens */
+  }
+
+  .disease-detail {
+    padding: 1rem;
+  }
+
+  .section-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-buttons button {
+    width: 100%; /* Full width for buttons on smaller screens */
+  }
+}

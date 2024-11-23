@@ -1,0 +1,30 @@
+.stress-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .question {
+    margin: 10px 0;
+  }
+  
+  label {
+    display: block;
+    margin-left: 20px;
+  }
+  
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  .result {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
