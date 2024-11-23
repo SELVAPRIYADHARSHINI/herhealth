@@ -1,62 +1,91 @@
+/* General Styling */
 .home {
   min-height: 100vh;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.home.fade-in {
+  opacity: 1;
+}
+
+/* Logo Section */
+.logo-container {
+  position: fixed;
+  top: 80px;
+  left: 10px;
+  text-align: center;
+  z-index: 10;
+}
+
+.institution-logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+}
+
+.institution-name {
+  font-size: 14px;
+  color: rgb(170, 61, 79); /* Pink color */
+  margin-top: 5px;
 }
 
 /* Hero Section */
 .hero-section {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: calc(var(--spacing-xl) * 2) var(--spacing-lg);
+  padding: calc(var(--spacing-xl) * 3) var(--spacing-lg);
   min-height: 80vh;
   gap: var(--spacing-xl);
 }
 
-.hero-content {
-  flex: 1;
-  max-width: 600px;
-}
-
 .hero-title {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   line-height: 1.2;
   margin-bottom: var(--spacing-lg);
-  color: var(--text-primary);
+  color: rgb(170, 61, 79); /* Pink color */
   animation: slideInLeft 1s ease;
+  margin-top: var(--spacing-lg);
+}
+
+.hero-content {
+  flex: 1;
+  text-align: center;
+  max-width: 700px;
 }
 
 .hero-description {
   font-size: 1.2rem;
   line-height: 1.6;
-  color: var(--text-secondary);
+  color: rgb(170, 61, 79); /* Ensure description is pink */
   margin-bottom: var(--spacing-xl);
   animation: slideInLeft 1s ease 0.2s;
   opacity: 0;
   animation-fill-mode: forwards;
 }
 
-.hero-buttons {
-  display: flex;
-  gap: var(--spacing-md);
-  animation: slideInLeft 1s ease 0.4s;
-  opacity: 0;
-  animation-fill-mode: forwards;
-}
-
 .hero-image-container {
-  flex: 1;
+  margin-top: var(--spacing-lg);
   display: flex;
   justify-content: center;
   animation: slideInRight 1s ease;
 }
 
 .hero-image {
-  max-width: 100%;
-  height: auto;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
   border-radius: var(--border-radius-lg);
   box-shadow: var(--shadow-lg);
+  transition: transform 0.3s ease;
+}
+
+.hero-image:hover {
+  transform: scale(1.05);
 }
 
 /* Team Section */
@@ -68,7 +97,7 @@
 .section-title {
   text-align: center;
   font-size: 2.5rem;
-  color: var(--text-primary);
+  color: rgb(170, 61, 79); /* Pink color */
   margin-bottom: var(--spacing-xl);
 }
 
@@ -80,8 +109,15 @@
   margin: 0 auto;
 }
 
+/* Developer Card */
 .dev-card {
   text-align: center;
+  transition: transform 0.3s ease;
+  border: 2px solid rgb(170, 61, 79); /* Pink border */
+}
+
+.dev-card h2, .dev-card h3 {
+  color: rgb(170, 61, 79); /* Pink color for name and role */
 }
 
 .dev-image {
@@ -89,12 +125,31 @@
   height: 150px;
   border-radius: 50%;
   margin-bottom: var(--spacing-md);
-  border: 4px solid var(--primary-light);
+  border: 4px solid rgb(170, 61, 79); /* Pink border */
   transition: transform var(--transition-normal);
 }
 
 .dev-card:hover .dev-image {
   transform: scale(1.1);
+}
+
+.dev-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Button Styling */
+button.primary {
+  background-color: rgb(170, 61, 79); /* Pink button background */
+  color: white; /* White text */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button.primary:hover {
+  background-color: #9c3a48; /* Slightly darker pink on hover */
 }
 
 /* Animations */
@@ -124,29 +179,6 @@
 @media (max-width: 968px) {
   .hero-section {
     flex-direction: column;
-    text-align: center;
-    padding-top: calc(var(--spacing-xl) * 1.5);
-  }
-
-  .hero-title {
-    font-size: 2.5rem;
-  }
-
-  .hero-buttons {
-    justify-content: center;
-  }
-
-  .hero-image-container {
-    margin-top: var(--spacing-xl);
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-buttons {
-    flex-direction: column;
-  }
-
-  .section-title {
-    font-size: 2rem;
+    gap: 20px;
   }
 }

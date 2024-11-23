@@ -6,13 +6,13 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="nav-container">
-        <div className="nav-logo">HealthCare AI</div>
-        <ul className="nav-links">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/info">Info</Link></li>
-          <li><Link to="/analyze">Analyze</Link></li>
-          <li><Link to="/chatbot">Chatbot</Link></li>
-        </ul>
+        <div className="nav-logo">HerHealth🧚🏻🩷</div>
+        <div className="nav-links">
+          <Link to="/">Home</Link>
+          <Link to="/info">Info</Link>
+          <Link to="/analyze">Analyze</Link>
+          <Link to="/chatbot">Chatbot</Link>
+        </div>
       </div>
     </nav>
   );

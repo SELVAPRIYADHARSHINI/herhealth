@@ -21,12 +21,12 @@ const StressInfo = () => {
         </p>
         
         <h3>Symptoms</h3>
-        <ul>
+        <ol>
           <li>Physical: Headaches, muscle tension, fatigue, and rapid heartbeat</li>
           <li>Emotional: Anxiety, irritability, mood swings, and feeling overwhelmed</li>
           <li>Mental: Difficulty concentrating, forgetfulness, and indecisiveness</li>
           <li>Behavioral: Changes in appetite, insomnia, or increased use of alcohol or other substances</li>
-        </ul>
+        </ol>
       </section>
 
       {/* Stress Prevention Section */}
@@ -42,7 +42,7 @@ const StressInfo = () => {
         </p>
         
         <h3>Prevention Methods</h3>
-        <ul>
+        <ol>
           <li>Regular Exercise: Engage in physical activities like walking, yoga, or cycling</li>
           <li>Healthy Diet: Eat balanced meals rich in vitamins and nutrients</li>
           <li>Sleep Hygiene: Aim for 7-8 hours of quality sleep each night</li>
@@ -50,7 +50,7 @@ const StressInfo = () => {
           <li>Time Management: Plan your day and prioritize tasks to reduce workload stress</li>
           <li>Social Support: Spend time with friends and loved ones or seek support groups</li>
           <li>Limit Triggers: Avoid unnecessary stressors, such as overusing technology or procrastinating</li>
-        </ul>
+        </ol>
       </section>
     </div>
   );

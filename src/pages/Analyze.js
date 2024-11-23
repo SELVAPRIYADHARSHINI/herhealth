@@ -2,9 +2,10 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Analyze.css';
 
-// Import images if they are in 'src/assets'
+// Import images
 import periodsImage from '../assets/periods.png';
 import downloadImage from '../assets/download.jpg';
+import stressImage from '../assets/stress.jpg'; // Import stress image
 
 const Analyze = () => {
   const navigate = useNavigate();
@@ -23,14 +24,14 @@ const Analyze = () => {
       description: "Choose to examine breast or uterus cancer and complete a questionnaire to assess your risk level.",
       image: downloadImage,
       page: "/cancer"
+    },
+    {
+      id: 3,
+      title: "Stress",
+      description: "Take a questionnaire to analyze your stress levels and receive helpful recommendations.",
+      image: stressImage, // Use the imported stress image
+      page: "/stress"
     }
-    // {
-    //   id: 3,
-    //   title: "Stress",
-    //   description: "Answer questions about your lifestyle and mental health to evaluate stress levels.",
-    //   image: stressImage,
-    //   page: "/stress"
-    // }
   ];
 
   const handleNavigate = (page) => {
@@ -39,7 +40,15 @@ const Analyze = () => {
 
   return (
     <div className="analyze-page">
-      <h1 className="analyze-title">Health Analysis Tools</h1>
+      <h1 className="analyze-title">Health Analysis</h1>
+
+      {/* Adding the health analysis prompt below the title */}
+      <center>
+        <p style={{ fontWeight: 'bold', color: 'blue', fontSize: '1.2rem' }}>
+          Analyze your health now!
+        </p>
+      </center>
+
       <div className="condition-cards">
         {conditions.map((condition) => (
           <div key={condition.id} className="condition-card">

@@ -4,12 +4,14 @@ import './Stress.css';
 const Stress = () => {
   // State to hold the answers for each question
   const [answers, setAnswers] = useState(new Array(10).fill(0));
+  const [calculated, setCalculated] = useState(false);  // State to track if the result has been calculated
 
   // Function to handle answer changes and calculate total score
   const handleAnswerChange = (questionIndex, score) => {
     const newAnswers = [...answers];
     newAnswers[questionIndex] = score;
     setAnswers(newAnswers);
+    setCalculated(false); // Reset the calculated state when answers change
   };
 
   // Reverse scoring logic for questions 4, 5, 7, 8
@@ -29,6 +31,11 @@ const Stress = () => {
     if (totalScore <= 13) return 'Low Stress';
     if (totalScore <= 26) return 'Moderate Stress';
     return 'High Perceived Stress';
+  };
+
+  // Handle calculate button click
+  const handleCalculate = () => {
+    setCalculated(true); // Set calculated state to true
   };
 
   return (
@@ -196,11 +203,16 @@ const Stress = () => {
         </div>
       </form>
 
-      {/* Display Total Score and Stress Level */}
-      <div className="result">
-        <p><strong>Total Score: </strong>{totalScore}</p>
-        <p><strong>Stress Level: </strong>{getStressLevel()}</p>
-      </div>
+      {/* Calculate Button */}
+      <button type="button" onClick={handleCalculate}>Calculate</button>
+
+      {/* Display Total Score and Stress Level only after clicking Calculate */}
+      {calculated && (
+        <div className="result">
+          <p><strong>Total Score: </strong>{totalScore}</p>
+          <p><strong>Stress Level: </strong>{getStressLevel()}</p>
+        </div>
+      )}
     </div>
   );
 };

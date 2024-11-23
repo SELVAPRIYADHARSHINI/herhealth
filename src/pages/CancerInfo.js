@@ -21,7 +21,7 @@ const CancerInfo = () => {
         </p>
         
         <h3>Symptoms</h3>
-        <ul>
+        <ol>
           <li>A lump in the breast or underarm</li>
           <li>Unexplained pain in the breast or nipple area</li>
           <li>Change in the size, shape, or appearance of the breast</li>
@@ -29,27 +29,27 @@ const CancerInfo = () => {
           <li>Nipple discharge, especially if it's bloody</li>
           <li>Swelling in the armpit or collarbone area</li>
           <li>A sudden change in the contour of the breast</li>
-        </ul>
+        </ol>
 
         <h3>Risk Factors</h3>
-        <ul>
+        <ol>
           <li>Age (increased risk with age, especially after 50)</li>
           <li>Family history of breast cancer (first-degree relatives)</li>
           <li>Inherited gene mutations (e.g., BRCA1 and BRCA2)</li>
           <li>Personal history of breast cancer or other breast diseases</li>
           <li>Hormonal factors (early menstruation, late menopause, or hormone replacement therapy)</li>
           <li>Lifestyle factors (diet, physical inactivity, alcohol consumption, and obesity)</li>
-        </ul>
+        </ol>
 
         <h3>Treatment Options</h3>
-        <ul>
+        <ol>
           <li>Surgery (Mastectomy or Tumor Removal)</li>
           <li>Chemotherapy</li>
           <li>Radiation Therapy</li>
           <li>Hormone Therapy</li>
           <li>Targeted Therapy</li>
           <li>Immunotherapy</li>
-        </ul>
+        </ol>
       </section>
 
       {/* Uterine Cancer Section */}
@@ -65,7 +65,7 @@ const CancerInfo = () => {
         </p>
 
         <h3>Symptoms</h3>
-        <ul>
+        <ol>
           <li>Abnormal vaginal bleeding, especially after menopause</li>
           <li>Heavy or irregular menstrual periods</li>
           <li>Pelvic pain or discomfort, especially during urination or intercourse</li>
@@ -74,10 +74,10 @@ const CancerInfo = () => {
           <li>Vaginal discharge (may be clear, pink, or bloody)</li>
           <li>Pain in the lower abdomen or pelvis</li>
           <li>Swelling or bloating of the abdomen (in advanced cases)</li>
-        </ul>
+        </ol>
 
         <h3>Risk Factors</h3>
-        <ul>
+        <ol>
           <li>Obesity</li>
           <li>Age (especially after menopause)</li>
           <li>Hormonal imbalances</li>
@@ -85,17 +85,17 @@ const CancerInfo = () => {
           <li>Diabetes</li>
           <li>History of endometrial hyperplasia</li>
           <li>Genetic syndromes (e.g., Lynch syndrome)</li>
-        </ul>
+        </ol>
 
         <h3>Treatment Options</h3>
-        <ul>
+        <ol>
           <li>Surgery (Hysterectomy)</li>
           <li>Chemotherapy</li>
           <li>Radiation Therapy</li>
           <li>Hormone Therapy</li>
           <li>Targeted Therapy</li>
           <li>Immunotherapy</li>
-        </ul>
+        </ol>
       </section>
     </div>
   );

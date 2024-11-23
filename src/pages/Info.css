@@ -8,10 +8,22 @@
 
 .info-title {
   text-align: center;
-  color: #1a73e8;
+  color: rgb(170, 61, 79);
   margin-bottom: 2rem;
-  font-size: 2rem; /* Reduced font size for better balance */
+  font-size: 2rem;
+  border-bottom: 2px solid pink; /* Adds a pink line */
+  text-decoration: none;
 }
+hr {
+  display: none; /* Hides any <hr> tag that might be creating the line */
+}
+
+
+h1, h2, h3, h4, h5, h6, p {
+  border: none;
+  text-decoration: none; /* Removes any default line or decoration */
+}
+
 
 .disease-cards {
   display: grid;
@@ -51,7 +63,7 @@
 .disease-card h2 {
   padding: 1rem;
   margin: 0;
-  color: #1a73e8;
+  color: rgb(170, 61, 79);
   font-size: 1.25rem; /* Reduced font size */
 }
 
@@ -65,7 +77,7 @@
 .disease-card button {
   margin: 1rem;
   padding: 0.4rem 1rem; /* Reduced padding for a smaller button */
-  background-color: #1a73e8;
+  background-color: rgb(170, 61, 79);
   color: white;
   border: none;
   border-radius: 5px;
@@ -76,7 +88,7 @@
 }
 
 .disease-card button:hover {
-  background-color: #1557b0;
+  background-color: rgb(170, 61, 79);
   transform: scale(1.05);
 }
 
@@ -88,7 +100,7 @@
 }
 
 .disease-detail h1 {
-  color: #1a73e8;
+  color: rgb(170, 61, 79);
   margin-bottom: 1.5rem;
   font-size: 1.75rem; /* Reduced font size */
 }
@@ -110,7 +122,7 @@
 
 .back-button {
   padding: 0.4rem 1rem; /* Smaller button dimensions */
-  background-color: #1a73e8;
+  background-color: rgb(170, 61, 79);
   color: white;
   border: none;
   border-radius: 5px;
@@ -120,7 +132,7 @@
 }
 
 .back-button:hover {
-  background-color: #1557b0;
+  background-color: rgb(170, 61, 79);
 }
 
 .section-buttons {
@@ -133,7 +145,7 @@
 .section-buttons button {
   padding: 0.4rem 1rem;
   background-color: #e3f2fd;
-  color: #1a73e8;
+  color: rgb(170, 61, 79);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -143,7 +155,7 @@
 }
 
 .section-buttons button.active {
-  background-color: #1a73e8;
+  background-color: rgb(170, 61, 79);
   color: white;
 }
 

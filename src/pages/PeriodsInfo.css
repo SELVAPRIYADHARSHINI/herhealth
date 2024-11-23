@@ -1,157 +1,121 @@
-/* General Styles */
-.info-page {
+/* Base Styles */
+body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f6f9;
-    color: #333;
-    margin: 0 auto;
-    padding: 20px;
-    max-width: 1200px;
-    line-height: 1.6;
-}
-
-h1 {
-    text-align: center;
-    color: #1E2A56;
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-}
-
-/* Intro Section */
-.intro-section {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.intro-image {
-    width: 100%;
-    max-width: 450px;
-    border-radius: 10px;
-    margin-top: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.intro-text {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    max-width: 850px;
-    margin: 20px auto;
-    text-align: justify;
-    color: #555;
-}
-
-/* Section Styles */
-h2 {
-    font-size: 2rem;
-    color: #1E2A56;
-    margin-bottom: 20px;
-    text-align: center;
-    font-weight: 600;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 20px auto;
-    max-width: 900px;
-    text-align: left;
-}
-
-ul li {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    margin-bottom: 10px;
-    color: #666;
-    position: relative;
-}
-
-ul li::before {
-    content: "\2022"; /* Bullet point symbol */
-    color: #4A90E2;
-    position: absolute;
-    left: -20px;
-    font-size: 1.5rem;
-    top: 0;
-}
-
-/* Section Images */
-.section-images {
-    display: flex;
-    justify-content: center;
-    margin: 30px 0;
-}
-
-.section-image {
-    width: 100%;
-    max-width: 350px;
-    border-radius: 8px;
-    margin: 0 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Button Style */
-.cta-button {
-    background-color: #4A90E2;
-    color: white;
-    font-size: 1.2rem;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    display: block;
-    margin: 30px auto;
-    text-align: center;
-    width: fit-content;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.cta-button:hover {
-    background-color: #3578e5;
-}
-
-/* Footer */
-.info-footer {
-    background-color: #1E2A56;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 50px;
-    border-radius: 8px;
-}
-
-.info-footer p {
+    background-color: #f5f5f5; /* Soft light background */
     margin: 0;
-    font-size: 1.1rem;
-}
-
-/* Mobile Responsive Design */
-@media (max-width: 768px) {
-    .intro-image, .section-image {
-        max-width: 100%;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .info-page {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header Styles */
+  .info-page h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: #0077b6; /* Calm blue */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #0077b6;
+    padding-bottom: 10px;
+  }
+  
+  /* Section Styles */
+  section {
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #e63946; /* Accent red */
+    border-left: 4px solid #e63946;
+    padding-left: 10px;
+  }
+  
+  /* Text Styles */
+  p,
+  ol li {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+  
+  ol {
+    margin-left: 20px;
+    padding-left: 0;
+  }
+  
+  ol li {
+    margin-bottom: 8px;
+    list-style: decimal;
+  }
+  
+  /* Image Styles */
+  .intro-image,
+  .section-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 15px auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Section Layouts for Vertical Flow */
+  .intro-section,
+  .symptoms-section,
+  .causes-section,
+  .management-section,
+  .prevention-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-aligns content */
+    gap: 20px;
+  }
+  
+  .intro-section img,
+  .symptoms-section img,
+  .causes-section img,
+  .management-section img,
+  .prevention-section img {
+    margin-bottom: 20px;
+  }
+  
+  /* Footer Styles */
+  .info-footer {
+    font-size: 0.9rem;
+    text-align: center;
+    color: #666;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+  }
+  /* Restrict size of the third image */
+.third-section-image {
+    max-width: 70%; /* Reduce size for this image only */
+    height: auto;
+    border-radius: 8px;
+    margin: 15px auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  }
+  
+  
+  /* Media Queries for Responsive Design */
+  @media (min-width: 768px) {
+    .intro-section,
+    .symptoms-section,
+    .causes-section,
+    .management-section,
+    .prevention-section {
+      flex-direction: column; /* Ensure vertical flow even on large screens */
     }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1.8rem;
-    }
-
-    .intro-text {
-        font-size: 1.1rem;
-    }
-
-    ul li {
-        font-size: 1rem;
-    }
-
-    .cta-button {
-        font-size: 1.1rem;
-        padding: 10px 20px;
-    }
-
-    .info-footer {
-        padding: 15px;
-    }
-}
+  }
+  
