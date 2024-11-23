@@ -1,6 +1,6 @@
 .breast-container {
     font-family: Arial, sans-serif;
-    margin: 20px auto;
+    margin: 30px auto;
     max-width: 600px;
     padding: 30px;
     border: 1px solid #ccc;
@@ -14,8 +14,9 @@
     margin-bottom: 20px;
   }
   
-  .question {
+  .question p{
     margin-bottom: 15px;
+    
   }
   
   .question p {

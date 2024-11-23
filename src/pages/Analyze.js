@@ -5,7 +5,7 @@ import './Analyze.css';
 // Import images
 import periodsImage from '../assets/periods.png';
 import downloadImage from '../assets/download.jpg';
-import stressImage from '../assets/stress.jpg'; // Import stress image
+//import stressImage from '../assets/stress.jpg'; // Import stress image
 
 const Analyze = () => {
   const navigate = useNavigate();
@@ -25,13 +25,7 @@ const Analyze = () => {
       image: downloadImage,
       page: "/cancer"
     },
-    {
-      id: 3,
-      title: "Stress",
-      description: "Take a questionnaire to analyze your stress levels and receive helpful recommendations.",
-      image: stressImage, // Use the imported stress image
-      page: "/stress"
-    }
+   
   ];
 
   const handleNavigate = (page) => {

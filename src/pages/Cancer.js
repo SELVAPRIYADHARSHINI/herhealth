@@ -9,7 +9,7 @@ function Cancer() {
   return (
     <div className="cancer-container">
       <h1 className="cancer-title">Cancer Assessment</h1>
-      <p className="cancer-description">Select the type of cancer to proceed with the assessment.</p>
+      <p className="cancer-description"><b>Select the type of cancer to proceed with the assessment</b></p>
       <div className="button-container">
         <button className="cancer-button" onClick={() => navigate('/breast')}>Breast Cancer</button>
         <button className="cancer-button" onClick={() => navigate('/uterus')}>Uterine Cancer</button>

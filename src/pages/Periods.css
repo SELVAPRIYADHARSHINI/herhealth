@@ -10,7 +10,7 @@
   
   .question {
     margin-bottom: 20px;
-    color: rgb(170, 61, 79);
+   
   }
   
   .options {
@@ -18,7 +18,7 @@
     flex-direction: column;
   }
   .question h3 {
-    color: rgb(170, 61, 79);
+    color: black;
   }
   .periods-page p b {
     font-size: 30px; 

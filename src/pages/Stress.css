@@ -1,5 +1,5 @@
 .stress-container {
-  padding: 20px;
+  padding: 40px;
   max-width: 600px;
   margin: auto;
   font-family: Arial, sans-serif;
@@ -43,9 +43,9 @@ button:hover {
   margin-top: 20px;
   font-weight: bold;
   text-align: center;
-  display: none;
+  display: none;  /* Initially hidden */
 }
 
 .result.active {
-  display: block;
+  display: block;  /* Visible when active */
 }

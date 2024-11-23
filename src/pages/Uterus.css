@@ -1,47 +1,63 @@
 .uterus-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-  }
-  
-  .uterus-container h1 {
-    text-align: center;
-    color: #333;
-  }
-  
-  .question {
-    margin: 20px 0;
-  }
-  
-  .question p {
-    font-weight: bold;
-    color: #555;
-  }
-  
-  .question label {
-    display: block;
-    margin: 5px 0;
-    color: #666;
-  }
-  
-  .risk-button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-  }
-  
-  .risk-button:hover {
-    background-color: #0056b3;
-  }
-  
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  background-color: #f9f9f9;
+}
+
+.uterus-container h1 {
+  text-align: center;
+  color: rgb(170, 61, 79); /* Updated heading color */
+  margin-top: 40px; /* Added margin to move heading down */
+}
+
+.question {
+  margin: 20px 0;
+}
+
+.question p {
+  font-weight: bold;
+  color: #555;
+}
+
+.question label {
+  display: block;
+  margin: 5px 0;
+  color: #666;
+}
+
+.risk-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: rgb(170, 61, 79); /* Updated button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.risk-button:hover {
+  background-color: rgb(138, 51, 65); /* Slightly darker pink for hover effect */
+}
+
+.risk-message {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.risk-message h2 {
+  color: rgb(170, 61, 79); /* Matching color for the risk result heading */
+}
+
+.risk-message p {
+  color: #555;
+}
