@@ -5,7 +5,7 @@ import './Analyze.css';
 // Import images
 import periodsImage from '../assets/periods.png';
 import downloadImage from '../assets/download.jpg';
-//import stressImage from '../assets/stress.jpg'; // Import stress image
+import stressImage from '../assets/stress.jpg'; // Import stress image
 
 const Analyze = () => {
   const navigate = useNavigate();
@@ -24,6 +24,13 @@ const Analyze = () => {
       description: "Choose to examine breast or uterus cancer and complete a questionnaire to assess your risk level.",
       image: downloadImage,
       page: "/cancer"
+    },
+    {
+      id: 3,
+      title: "Stress",
+      description: "Understand your stress levels by answering a simple set of questions.",
+      image: stressImage,
+      page: "/stress", // Add the page route for stress analysis
     },
    
   ];

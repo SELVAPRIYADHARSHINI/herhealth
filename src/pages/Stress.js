@@ -2,58 +2,40 @@ import React, { useState } from 'react';
 import './Stress.css';
 
 const Stress = () => {
+  // State to hold the answers for each question
   const [answers, setAnswers] = useState(new Array(10).fill(0));
-  const [calculated, setCalculated] = useState(false);  // Added state to track if calculation is done
 
-  // Handle answer changes
+  // Function to handle answer changes and calculate total score
   const handleAnswerChange = (questionIndex, score) => {
     const newAnswers = [...answers];
     newAnswers[questionIndex] = score;
     setAnswers(newAnswers);
   };
 
-  // Reverse scoring for certain questions
+  // Reverse scoring logic for questions 4, 5, 7, 8
   const getScore = (index) => {
     const score = answers[index];
     if (index === 3 || index === 4 || index === 6 || index === 7) {
-      return 4 - score;  // Reverse scoring
+      return 4 - score; // Reverse scoring
     }
     return score;
   };
 
-  // Calculate the total score
+  // Calculate total score
   const totalScore = answers.reduce((total, _, index) => total + getScore(index), 0);
 
-  // Determine the stress level based on total score
+  // Determine the stress level based on the total score
   const getStressLevel = () => {
     if (totalScore <= 13) return 'Low Stress';
     if (totalScore <= 26) return 'Moderate Stress';
     return 'High Perceived Stress';
   };
 
-  // Suggestion based on stress level
-  const getSuggestion = () => {
-    const stressLevel = getStressLevel();
-    switch (stressLevel) {
-      case 'Low Stress':
-        return 'You are managing stress well! Keep maintaining a balanced lifestyle.';
-      case 'Moderate Stress':
-        return 'Consider practicing stress management techniques like meditation and exercise.';
-      case 'High Perceived Stress':
-        return 'It might be helpful to speak with a professional to address your stress levels.';
-      default:
-        return '';
-    }
-  };
-
-  // Function to calculate and show results when button is clicked
-  const handleCalculate = () => {
-    setCalculated(true);  // Set calculated to true to display the result
-  };
-
   return (
     <div className="stress-container">
-      <h1>Perceived Stress Scale (PSS)</h1>
+     <h1 style={{ color: 'rgb(170, 61, 79)', textAlign: 'center', marginTop: '20px' }}>
+        Perceived Stress Scale (PSS)
+      </h1>
       <form>
         {/* Question 1 */}
         <div className="question">
@@ -216,17 +198,11 @@ const Stress = () => {
         </div>
       </form>
 
-      {/* Calculate Button */}
-      <button type="button" onClick={handleCalculate}>Calculate Risk</button>
-
-      {/* Display Result Only After Calculation */}
-      {calculated && (
-        <div className="result">
-          <p><strong>Total Score: </strong>{totalScore}</p>
-          <p><strong>Stress Level: </strong>{getStressLevel()}</p>
-          <p><strong>Suggestion: </strong>{getSuggestion()}</p>
-        </div>
-      )}
+      {/* Display Total Score and Stress Level */}
+      <div className="result">
+        <p><strong>Total Score: </strong>{totalScore}</p>
+        <p><strong>Stress Level: </strong>{getStressLevel()}</p>
+      </div>
     </div>
   );
 };
