@@ -1,5 +1,5 @@
 .periods-page {
-    padding: 20px;
+    padding: 45px;
     font-family: Arial, sans-serif;
   }
   
@@ -10,12 +10,20 @@
   
   .question {
     margin-bottom: 20px;
+    color: rgb(170, 61, 79);
   }
   
   .options {
     display: flex;
     flex-direction: column;
   }
+  .question h3 {
+    color: rgb(170, 61, 79);
+  }
+  .periods-page p b {
+    font-size: 30px; 
+  }
+  
   
   label {
     margin-bottom: 8px;
@@ -27,7 +35,7 @@
     margin: 20px auto;
     padding: 10px 20px;
     font-size: 18px;
-    background-color: #4CAF50;
+    background-color: rgb(170, 61, 79);
     color: white;
     border: none;
     cursor: pointer;
@@ -35,7 +43,7 @@
   }
   
   .calculate-btn:hover {
-    background-color: #45a049;
+    background-color:rgb(170, 61, 79) ;
   }
   
   .risk-result {

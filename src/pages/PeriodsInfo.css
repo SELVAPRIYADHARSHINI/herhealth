@@ -6,116 +6,120 @@ body {
     padding: 0;
     color: #333;
     line-height: 1.6;
-  }
-  
-  .info-page {
+}
+
+.info-page {
     max-width: 900px;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Header Styles */
-  .info-page h1 {
+}
+
+/* Header Styles */
+.info-page h1 {
     font-size: 2rem;
     text-align: center;
-    color: #0077b6; /* Calm blue */
+    color: rgb(170, 61, 79); /* Reverted to pink */
     margin-bottom: 20px;
-    border-bottom: 2px solid #0077b6;
+    border-bottom: rgb(170, 61, 79); /* Reverted to pink */
     padding-bottom: 10px;
-  }
-  
-  /* Section Styles */
-  section {
+}
+
+/* Section Styles */
+section {
     margin-bottom: 30px;
-  }
-  
-  h2 {
+}
+
+h2 {
     font-size: 1.5rem;
     margin-bottom: 15px;
-    color: #e63946; /* Accent red */
-    border-left: 4px solid #e63946;
+    color: rgb(170, 61, 79); /* Reverted to pink */
+    border-left: 4px solid rgb(170, 61, 79); /* Reverted to pink */
     padding-left: 10px;
-  }
-  
-  /* Text Styles */
-  p,
-  ol li {
+}
+
+/* Text Styles */
+p,
+ol li {
     font-size: 20px;
     margin-bottom: 10px;
     text-align: justify;
-  }
-  
-  ol {
+}
+
+ol {
     margin-left: 20px;
     padding-left: 0;
-  }
-  
-  ol li {
+}
+
+ol li {
     margin-bottom: 8px;
     list-style: decimal;
-  }
-  
-  /* Image Styles */
-  .intro-image,
-  .section-image {
+}
+
+/* Image Styles */
+.intro-image,
+.section-image {
     display: block;
     max-width: 100%;
     height: auto;
     border-radius: 8px;
     margin: 15px auto;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-  }
-  
-  /* Section Layouts for Vertical Flow */
-  .intro-section,
-  .symptoms-section,
-  .causes-section,
-  .management-section,
-  .prevention-section {
+}
+
+/* Section Layouts for Vertical Flow */
+.intro-section,
+.symptoms-section,
+.causes-section,
+.management-section,
+.prevention-section {
     display: flex;
     flex-direction: column;
     align-items: center; /* Center-aligns content */
     gap: 20px;
-  }
-  
-  .intro-section img,
-  .symptoms-section img,
-  .causes-section img,
-  .management-section img,
-  .prevention-section img {
+}
+
+.intro-section img,
+.symptoms-section img,
+.causes-section img,
+.management-section img,
+.prevention-section img {
     margin-bottom: 20px;
-  }
-  
-  /* Footer Styles */
-  .info-footer {
+}
+
+/* Footer Styles */
+.info-footer {
     font-size: 0.9rem;
     text-align: center;
     color: #666;
     margin-top: 20px;
     padding-top: 15px;
     border-top: 1px solid #ddd;
-  }
-  /* Restrict size of the third image */
+}
+
+/* Restrict size of the third image */
 .third-section-image {
     max-width: 70%; /* Reduce size for this image only */
     height: auto;
     border-radius: 8px;
     margin: 15px auto;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-  }
-  
-  
-  /* Media Queries for Responsive Design */
-  @media (min-width: 768px) {
+}
+
+/* In Periods.css */
+.periods-page h1 {
+    color: rgb(170, 61, 79);  /* Reverted to pink */
+}
+
+/* Media Queries for Responsive Design */
+@media (min-width: 768px) {
     .intro-section,
     .symptoms-section,
     .causes-section,
     .management-section,
     .prevention-section {
-      flex-direction: column; /* Ensure vertical flow even on large screens */
+        flex-direction: column; /* Ensure vertical flow even on large screens */
     }
-  }
-  
+}

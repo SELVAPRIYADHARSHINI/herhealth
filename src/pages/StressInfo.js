@@ -6,11 +6,11 @@ import stressPreventionImage from '../assets/stressinfo2.jpg';
 const StressInfo = () => {
   return (
     <div className="info-page">
-      <h1>Stress Awareness</h1>
+      <h1 style={{ color: 'rgb(170, 61, 79)' }}>Stress Awareness</h1>
 
       {/* Stress Symptoms Section */}
       <section className="stress-section">
-        <h2>Stress Symptoms</h2>
+        <h2 style={{ color: 'rgb(170, 61, 79)' }}>Stress Symptoms</h2>
         <img
           src={stressSymptomsImage}
           alt="Stress Symptoms"
@@ -20,7 +20,7 @@ const StressInfo = () => {
           Stress is a natural response to challenges or demands in life, but chronic stress can negatively impact both physical and mental health. Recognizing the symptoms of stress early can help in managing it effectively.
         </p>
         
-        <h3>Symptoms</h3>
+        <h3 style={{ color: 'rgb(170, 61, 79)' }}>Symptoms</h3>
         <ol>
           <li>Physical: Headaches, muscle tension, fatigue, and rapid heartbeat</li>
           <li>Emotional: Anxiety, irritability, mood swings, and feeling overwhelmed</li>
@@ -31,7 +31,7 @@ const StressInfo = () => {
 
       {/* Stress Prevention Section */}
       <section className="stress-section">
-        <h2>Stress Prevention</h2>
+        <h2 style={{ color: 'rgb(170, 61, 79)' }}>Stress Prevention</h2>
         <img
           src={stressPreventionImage}
           alt="Stress Prevention"
@@ -41,7 +41,7 @@ const StressInfo = () => {
           Preventing stress involves adopting healthy habits and practices that improve overall well-being. Building resilience to stress can enhance your ability to face challenges and maintain balance.
         </p>
         
-        <h3>Prevention Methods</h3>
+        <h3 style={{ color: 'rgb(170, 61, 79)' }}>Prevention Methods</h3>
         <ol>
           <li>Regular Exercise: Engage in physical activities like walking, yoga, or cycling</li>
           <li>Healthy Diet: Eat balanced meals rich in vitamins and nutrients</li>

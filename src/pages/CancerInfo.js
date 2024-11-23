@@ -6,11 +6,11 @@ import uterineCancerImage from '../assets/uterinecancer.jpg';
 const CancerInfo = () => {
   return (
     <div className="info-page">
-      <h1>Cancer Awareness</h1>
+      <h1 style={{ color: 'rgb(170, 61, 79)' }}>Cancer Awareness</h1>
 
       {/* Breast Cancer Section */}
       <section className="cancer-section">
-        <h2>Breast Cancer</h2>
+        <h2 style={{ color: 'rgb(170, 61, 79)' }}>Breast Cancer</h2>
         <img
           src={breastCancerImage}
           alt="Breast Cancer"
@@ -20,7 +20,7 @@ const CancerInfo = () => {
           Breast cancer is one of the most common types of cancer affecting women worldwide. It occurs when cells in the breast begin to grow uncontrollably. Symptoms may include lumps in the breast, changes in the skin or shape of the breast, and unusual discharge from the nipple. Early detection through regular screening and self-examination is crucial for improving survival rates.
         </p>
         
-        <h3>Symptoms</h3>
+        <h3 style={{ color: 'rgb(170, 61, 79)' }}>Symptoms</h3>
         <ol>
           <li>A lump in the breast or underarm</li>
           <li>Unexplained pain in the breast or nipple area</li>
@@ -31,7 +31,7 @@ const CancerInfo = () => {
           <li>A sudden change in the contour of the breast</li>
         </ol>
 
-        <h3>Risk Factors</h3>
+        <h3 style={{ color: 'rgb(170, 61, 79)' }}>Risk Factors</h3>
         <ol>
           <li>Age (increased risk with age, especially after 50)</li>
           <li>Family history of breast cancer (first-degree relatives)</li>
@@ -41,7 +41,7 @@ const CancerInfo = () => {
           <li>Lifestyle factors (diet, physical inactivity, alcohol consumption, and obesity)</li>
         </ol>
 
-        <h3>Treatment Options</h3>
+        <h3 style={{ color: 'rgb(170, 61, 79)' }}>Treatment Options</h3>
         <ol>
           <li>Surgery (Mastectomy or Tumor Removal)</li>
           <li>Chemotherapy</li>
@@ -54,7 +54,7 @@ const CancerInfo = () => {
 
       {/* Uterine Cancer Section */}
       <section className="cancer-section">
-        <h2>Uterine Cancer</h2>
+        <h2 style={{ color: 'rgb(170, 61, 79)' }}>Uterine Cancer</h2>
         <img
           src={uterineCancerImage}
           alt="Uterine Cancer"
@@ -64,7 +64,7 @@ const CancerInfo = () => {
           Uterine cancer, also known as endometrial cancer, begins in the lining of the uterus. It is most commonly diagnosed in postmenopausal women, although it can affect younger women as well. Symptoms of uterine cancer may include abnormal vaginal bleeding, pelvic pain, and changes in urinary or bowel habits. Early detection through pelvic exams and ultrasounds can greatly improve treatment outcomes.
         </p>
 
-        <h3>Symptoms</h3>
+        <h3 style={{ color: 'rgb(170, 61, 79)' }}>Symptoms</h3>
         <ol>
           <li>Abnormal vaginal bleeding, especially after menopause</li>
           <li>Heavy or irregular menstrual periods</li>
@@ -76,7 +76,7 @@ const CancerInfo = () => {
           <li>Swelling or bloating of the abdomen (in advanced cases)</li>
         </ol>
 
-        <h3>Risk Factors</h3>
+        <h3 style={{ color: 'rgb(170, 61, 79)' }}>Risk Factors</h3>
         <ol>
           <li>Obesity</li>
           <li>Age (especially after menopause)</li>
@@ -87,7 +87,7 @@ const CancerInfo = () => {
           <li>Genetic syndromes (e.g., Lynch syndrome)</li>
         </ol>
 
-        <h3>Treatment Options</h3>
+        <h3 style={{ color: 'rgb(170, 61, 79)' }}>Treatment Options</h3>
         <ol>
           <li>Surgery (Hysterectomy)</li>
           <li>Chemotherapy</li>

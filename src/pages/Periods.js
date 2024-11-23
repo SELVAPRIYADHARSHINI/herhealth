@@ -144,7 +144,7 @@ const Periods = () => {
   return (
     <div className="periods-page">
       <h1>PCOD/PCOS Risk Assessment</h1>
-      <p>Answer the following questions to assess your risk for PCOD/PCOS:</p>
+      <p ><b>Answer the following questions to assess your risk for PCOD/PCOS:</b></p>
 
       {questions.map((question) => (
         <div key={question.id} className="question">

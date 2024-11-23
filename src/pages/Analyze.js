@@ -40,24 +40,25 @@ const Analyze = () => {
 
   return (
     <div className="analyze-page">
-      <h1 className="analyze-title">Health Analysis</h1>
+      <h1 style={{ color: 'rgb(170, 61, 79)' }} className="analyze-title">Health Analysis</h1>
 
       {/* Adding the health analysis prompt below the title */}
       <center>
-        <p style={{ fontWeight: 'bold', color: 'blue', fontSize: '1.2rem' }}>
+        <p style={{ fontWeight: 'bold', color: 'rgb(170, 61, 79)', fontSize: '1.2rem' }}>
           Analyze your health now!
         </p>
       </center>
 
       <div className="condition-cards">
         {conditions.map((condition) => (
-          <div key={condition.id} className="condition-card">
+          <div key={condition.id} className="condition-card" style={{ border: '2px solid rgb(170, 61, 79)', borderRadius: '10px' }}>
             <img src={condition.image} alt={condition.title} />
-            <h2>{condition.title}</h2>
+            <h2 style={{ color: 'rgb(170, 61, 79)' }}>{condition.title}</h2>
             <p>{condition.description}</p>
             <div className="button-group">
               <button 
                 className="analyze-btn"
+                style={{ backgroundColor: 'rgb(170, 61, 79)', color: 'white' }}
                 onClick={() => handleNavigate(condition.page)}
               >
                 Analyze Now

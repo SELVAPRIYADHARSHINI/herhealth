@@ -9,7 +9,9 @@ import pcosinfo3 from '../assets/pcosinfo3.jpg'; // Third image
 const PeriodsInfo = () => {
   return (
     <div className="info-page">
-      <h1 className="main-heading">PCOD/PCOS Awareness</h1>
+      <h1 style={{ color: 'rgb(170, 61, 79)', borderBottom: '2px solid rgb(170, 61, 79)', paddingBottom: '10px' }} className="main-heading">
+        PCOD/PCOS Awareness
+      </h1>
 
       <div className="intro-section">
         <img 
@@ -26,7 +28,9 @@ const PeriodsInfo = () => {
       </div>
 
       <section className="symptoms-section">
-        <h2 className="sub-heading">Common Symptoms</h2>
+        <h2 style={{ color: 'rgb(170, 61, 79)', borderLeft: '4px solid rgb(170, 61, 79)', paddingLeft: '10px' }} className="sub-heading">
+          Common Symptoms
+        </h2>
         <img 
           src={pcosinfo2} 
           alt="Symptoms of PCOD/PCOS" 
@@ -47,7 +51,9 @@ const PeriodsInfo = () => {
       </section>
 
       <section className="causes-section">
-        <h2 className="sub-heading">Causes</h2>
+        <h2 style={{ color: 'rgb(170, 61, 79)', borderLeft: '4px solid rgb(170, 61, 79)', paddingLeft: '10px' }} className="sub-heading">
+          Causes
+        </h2>
         <p className="section-text">
           While the exact cause of PCOD/PCOS remains unclear, several factors may play a role in its development:
         </p>
@@ -65,7 +71,9 @@ const PeriodsInfo = () => {
       </section>
 
       <section className="management-section">
-        <h2 className="sub-heading">Management Strategies</h2>
+        <h2 style={{ color: 'rgb(170, 61, 79)', borderLeft: '4px solid rgb(170, 61, 79)', paddingLeft: '10px' }} className="sub-heading">
+          Management Strategies
+        </h2>
         <p className="section-text">
           Although there’s no cure for PCOD/PCOS, you can manage the symptoms effectively with the following approaches:
         </p>
@@ -83,7 +91,9 @@ const PeriodsInfo = () => {
       </section>
 
       <section className="prevention-section">
-        <h2 className="sub-heading">Preventive Measures</h2>
+        <h2 style={{ color: 'rgb(170, 61, 79)', borderLeft: '4px solid rgb(170, 61, 79)', paddingLeft: '10px' }} className="sub-heading">
+          Preventive Measures
+        </h2>
         <p className="section-text">
           While not all cases of PCOD/PCOS can be prevented, you can take measures to lower your risk:
         </p>
@@ -96,7 +106,9 @@ const PeriodsInfo = () => {
       </section>
 
       <footer className="info-footer">
-        <h3 className="footer-heading">Final Thoughts</h3>
+        <h3 style={{ color: 'rgb(170, 61, 79)' }} className="footer-heading">
+          Final Thoughts
+        </h3>
         <p>
           If you experience symptoms of PCOD/PCOS, consult a healthcare professional for a proper diagnosis and management plan. 
           Early intervention is key to living a healthy, balanced life. Empower yourself with the right information and take 

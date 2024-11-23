@@ -6,6 +6,7 @@
   .cancer-title {
     font-size: 2em;
     color: #333;
+    padding: 20px;
   }
   
   .cancer-description {
@@ -23,7 +24,7 @@
     padding: 10px 20px;
     font-size: 1em;
     border: none;
-    background-color: #4CAF50;
+    background-color: rgb(170, 61, 79);
     color: white;
     cursor: pointer;
     border-radius: 5px;
@@ -31,6 +32,6 @@
   }
   
   .cancer-button:hover {
-    background-color: #45a049;
+    background-color: rgb(170, 61, 79);
   }
   
