@@ -17,7 +17,7 @@ const Home = () => {
             <div className="logo-container">
               <img src={logo} alt="Institution Logo" className="institution-logo" />
               <p className="institution-name">
-                <b>Integrated with KMCH</b>
+                <b>With support</b>
               </p>
             </div>
             <h1 className="hero-title">Your Guide for Better Health</h1>
