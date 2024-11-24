@@ -12,6 +12,7 @@ const Navbar = () => {
           <Link to="/info">Info</Link>
           <Link to="/analyze">Analyze</Link>
           <Link to="/chatbot">Chatbot</Link>
+          
         </div>
       </div>
     </nav>
